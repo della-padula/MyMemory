@@ -29,7 +29,7 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         let tempContents = self.contents.text as NSString
         
         //Content 추출하기
-        var realContents = tempContents.substring(with: NSRange(location: (self.subject as NSString).length,
+        let realContents = tempContents.substring(with: NSRange(location: (self.subject as NSString).length,
                                                 length: tempContents.length - (self.subject as NSString).length))
         
         data.title = self.subject
